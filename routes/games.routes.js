@@ -6,6 +6,8 @@ const router = express.Router();
 
 const userRoute = (app) => {
     router.post('/ListOrderOld', gamesController.listOrderOld);
+    router.post('/GetMyEmerdList', VerifyToken, gamesController.GetMyEmerdList);
+    router.post('/GameBetting', VerifyToken, gamesController.GameBetting);
     return app.use('/api/games', router);
 };
 

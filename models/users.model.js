@@ -77,6 +77,11 @@ const findByPhone = async (phone) => {
     }
 };
 
+const selectByPhone = async (phone) => {
+    const [user] = await connection.execute('SELECT * FROM users WHERE phone = ?', [phone]);
+    return user[0];
+};
+
 const Register = async (phone, password, refferer, ip) => {
     const [user] = await connection.execute('SELECT id_user FROM users WHERE phone = ?', [phone]);
     if (user.length > 0) return { status: 2 }; // Đã tồn tại số điện thoại
@@ -232,6 +237,7 @@ module.exports = {
     Register,
     Login,
     findByPhone,
+    selectByPhone,
     userInfo,
     ChangePassword,
     Recharge,

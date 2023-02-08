@@ -85,6 +85,21 @@ const listOrderOld = async (page_no, page_to) => {
     };
 };
 
+const GetMyEmerdList = async (phone, page_no, page_to) => {
+    const [bet_records] = await connection.query(
+        `SELECT order_code, period, result, money, fee, total, time, bet, status FROM bet_records WHERE phone = ? ORDER BY id_bet DESC LIMIT ${page_no}, ${page_to}`,
+        [phone],
+    );
+
+    const [BetRecordAll] = await connection.query(`SELECT id_bet FROM bet_records`);
+    let page = Math.ceil(BetRecordAll.length / 9);
+
+    return {
+        data: bet_records,
+        page: page,
+    };
+};
+
 const AddOrderBinGo18 = async () => {
     const [period] = await connection.query(
         `SELECT period FROM game_records WHERE status = 0 ORDER BY id_game DESC LIMIT 1`,
@@ -101,7 +116,27 @@ const AddOrderBinGo18 = async () => {
     ]);
 };
 
+const GameBetting = async (phone, gameBet, total) => {
+    const [period] = await connection.query(
+        `SELECT period FROM game_records WHERE status != 0 ORDER BY id_game DESC LIMIT 1`,
+    );
+    let _period = period[0].period;
+
+    let order_code = timerJoin() + randomStr(11).toUpperCase();
+
+    let money = total - total * 0.02;
+    let fee = total * 0.02;
+
+    await connection.query('UPDATE users SET money = money - ? WHERE phone = ?', [total, phone]);
+    await connection.query(
+        'INSERT INTO bet_records SET order_code = ?, period = ?, phone = ?, money = ?, fee = ?, bet = ?, add_time = ?, time =?',
+        [order_code, _period, phone, money, fee, JSON.stringify(gameBet), add_time(), timerJoin2()],
+    );
+};
+
 module.exports = {
     listOrderOld,
+    GetMyEmerdList,
     AddOrderBinGo18,
+    GameBetting,
 };
