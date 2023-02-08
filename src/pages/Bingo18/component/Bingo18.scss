@@ -1,0 +1,235 @@
+@import '@assets/fonts/fontTime.css';
+
+#bingo18 {
+    user-select: none;
+    background: rgb(10, 68, 41);
+    color: #fff;
+    .select-game {
+        width: 270px;
+        height: 35px;
+        border-radius: 8px;
+    }
+
+    .game-total,
+    .game-full {
+        background-color: rgb(15, 105, 71);
+    }
+
+    .game-total.active,
+    .game-full.active {
+        background-color: rgb(92, 187, 71);
+    }
+
+    .game-total {
+        border-radius: 8px 0px 0px 8px;
+    }
+    .game-full {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .game-draw {
+        padding: 12px 11px;
+    }
+
+    .draw-id {
+        font-weight: 700;
+    }
+
+    .countdown {
+        font-family: 'Cursed Timer ULiL' !important;
+        border-radius: 8px;
+        background-color: rgb(15, 105, 71);
+        color: rgb(92, 187, 71);
+    }
+    .result {
+        padding: 0 11px 6px;
+    }
+}
+
+.result-line {
+    height: 23px;
+    padding-right: 2px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    .title {
+        white-space: nowrap;
+        color: rgb(92, 187, 71);
+    }
+    .small {
+        background-color: #fff;
+        color: rgb(10, 68, 41);
+    }
+
+    .draw {
+        background-color: rgb(255, 191, 27);
+        color: rgb(10, 68, 41);
+    }
+
+    .big {
+        background-color: rgb(10, 68, 41);
+        color: #fff;
+    }
+
+    .result-ball {
+        width: 14.5px;
+        height: 14.5px;
+        border-radius: 4px;
+    }
+}
+
+.wait-result {
+    border: 1px solid #ffffff;
+    animation: fadeIn 0.75s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.statistic {
+    padding: 2px;
+    background-color: rgb(92, 187, 71);
+}
+
+.flex-d-2 {
+    flex: 2 0 0;
+}
+
+.flex-d-1 {
+    flex: 1 0 0;
+}
+
+.bg-actions {
+    background: rgba(10, 68, 41, 0.85);
+}
+
+.action-padding {
+    z-index: 10000;
+    width: 10rem;
+    max-width: 10rem;
+    position: fixed;
+    bottom: -1px;
+    padding: 6px 11px 12px;
+
+    .lottie {
+        width: 38px;
+        height: 38px;
+        background: #ffb13b;
+        border-radius: 100px;
+    }
+    .bet-amount {
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .amount {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #eedfa6;
+        margin-left: 5px;
+    }
+
+    .win-today {
+        transform-origin: left center;
+        transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        left: 41px;
+        .win-box {
+            padding: 4px 8px;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .white-triangle {
+            position: absolute;
+            top: 10px;
+            left: -7px;
+            width: 10px;
+        }
+    }
+
+    .live {
+        width: 6px;
+        height: 6px;
+        background: #eb0d1e;
+        border-radius: 100px;
+        animation: fadeIn 0.6s infinite alternate;
+    }
+
+    .viewer {
+        margin-left: 3px;
+        margin-right: 2px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .action {
+        margin-top: 6px;
+        .reset {
+            height: 40px;
+            background: #ffffff;
+            border-radius: 4px;
+            flex-grow: 1;
+        }
+
+        button {
+            &:active {
+                opacity: 0.5;
+                transition: opacity 100ms;
+            }
+        }
+    }
+
+    .action .confirm {
+        margin-left: 2.18px;
+        height: 40px;
+        background: radial-gradient(50% 257.5% at 50% 50%, #f8e3a3 25.68%, #ecbd6f 100%);
+        border-radius: 4px;
+        flex-grow: 8;
+        font-weight: 700;
+        font-size: 0.4rem;
+        line-height: 19px;
+    }
+}
+
+.mat-flat-button:not([class*='mat-elevation-z']),
+.mat-stroked-button:not([class*='mat-elevation-z']) {
+    box-shadow: 0 0 0 0 #0003, 0 0 0 0 #00000024, 0 0 0 0 #0000001f;
+}
+
+.mat-button-ripple.mat-ripple,
+.mat-button-focus-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.mat-ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+.mat-button-focus-overlay {
+    opacity: 0;
+    transition: opacity 200ms cubic-bezier(0.35, 0, 0.25, 1), background-color 200ms cubic-bezier(0.35, 0, 0.25, 1);
+}
+.mat-button-ripple.mat-ripple,
+.mat-button-focus-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    border-radius: inherit;
+}

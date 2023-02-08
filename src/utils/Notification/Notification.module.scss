@@ -1,0 +1,43 @@
+.msg {
+    max-width: 12.8rem;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+    .msg-content {
+        position: relative;
+        padding: 0.32rem 0.66667rem;
+        text-align: center;
+        line-height: 0.64rem;
+        word-break: break-all;
+        overflow: hidden;
+        font-size: 0.37333rem;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .v-enter,
+    .v-leave-to {
+        opacity: 0;
+    }
+}
+.v-enter-active {
+    transition: opacity 0.5s;
+    animation: bounce-in 0.5s;
+}
+.v-leave-active {
+    transition: opacity 0.3s;
+    animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    to {
+        transform: scale(1);
+    }
+}

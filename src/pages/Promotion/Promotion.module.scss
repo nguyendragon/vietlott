@@ -1,0 +1,47 @@
+.tab {
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    top: 1.33333rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 10rem;
+}
+
+.tab ul a {
+    width: 25%;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.action {
+    color: #f2413b !important;
+}
+.btn {
+    height: 1.06667rem;
+    background: #f2413b;
+    box-shadow: 0 0.10667rem 0.53333rem 0.05333rem rgb(242 65 59 / 27%);
+    border-radius: 0.26667rem;
+    color: #fff;
+}
+
+.info-data {
+    text-align: center;
+    padding: 0.26667rem 0;
+    width: 100%;
+    background: rgba(223, 56, 50, 0.02);
+    border: 0.04rem solid #f2413b;
+    border-radius: 0.26667rem;
+}
+
+.tit {
+    background: #f4f4f4;
+    padding: 0 0.4rem;
+    height: 0.90667rem;
+    line-height: 0.90667rem;
+    color: #333;
+}

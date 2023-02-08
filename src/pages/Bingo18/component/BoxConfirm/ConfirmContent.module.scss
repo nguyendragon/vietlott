@@ -1,0 +1,66 @@
+.confirm-content {
+    .item {
+        .tit {
+            font-size: 0.3rem;
+            color: #fff;
+        }
+    }
+    .amount-box {
+        .li {
+            cursor: pointer;
+            background-color: rgb(240, 240, 240);
+            color: #000;
+            text-align: center;
+            font-size: 0.27rem;
+            padding: 0.15rem 0.16667rem;
+            margin-left: 0.13333rem;
+        }
+        .li.action {
+            color: rgb(255, 255, 255);
+            background-color: rgb(251, 78, 78);
+        }
+    }
+
+    .stepper-box {
+        .digit-box {
+            margin-top: 5px;
+            width: 1.86667rem;
+            margin: 0 0.13333rem;
+            .van-field__control {
+                border: none;
+                width: 1.86667rem;
+                height: 0.74667rem;
+                font-size: 0.35rem;
+                text-align: center;
+            }
+        }
+        .minus,
+        .plus {
+            cursor: pointer;
+            width: 0.74667rem;
+            height: 0.74667rem;
+            background-color: rgb(240, 240, 240);
+        }
+        .minus.action,
+        .plus.action {
+            color: #fff;
+            background-color: rgb(251, 78, 78);
+        }
+    }
+
+    .multiple-box {
+        .li {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 0.27rem;
+            padding: 0.16667rem 0.27rem;
+            background-color: rgb(240, 240, 240);
+            color: #000;
+        }
+        .li.action {
+            color: #fff;
+            background-color: rgb(251, 78, 78);
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.mian {
+    background: url('@assets/images/bg_image.png') no-repeat top;
+    background-size: 100% 100%;
+    height: 100vh;
+    max-width: 13.33333rem;
+    .redenve {
+        padding: 0.66667rem;
+        .head-tit .txt {
+            font-size: 0.58667rem;
+            color: #fff;
+            margin-bottom: 0.13333rem;
+        }
+        .head-tit .des {
+            font-size: 0.34667rem;
+            color: #f9e8e8;
+        }
+
+        .con {
+            padding: 0.66667rem;
+        }
+
+        .box {
+            background: #fff;
+            border-radius: 0.4rem;
+            position: relative;
+            padding: 0.4rem;
+        }
+
+        .box .icon {
+            height: 0.53333rem;
+            width: 1.6rem;
+            background: #f2413b;
+            display: inline-block;
+            border-radius: 0.53333rem;
+            position: absolute;
+            top: -0.26667rem;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+        }
+
+        .box .icon .white {
+            margin-top: 0.13333rem;
+            display: inline-block;
+            border-radius: 0.26667rem;
+            width: 80%;
+            height: 0.26667rem;
+            background: #fff;
+        }
+    }
+    .redenve .box .tit {
+        margin-bottom: 0.26667rem;
+        font-size: 0.56rem;
+        color: #f2413b;
+    }
+
+    .redenve .box .input {
+        width: 100%;
+        height: 0.93333rem;
+        line-height: 0.93333rem;
+        border-radius: 0.13333rem;
+        font-size: 0.37333rem;
+        padding: 0 0.26667rem;
+        border: 0.05333rem solid rgba(242, 65, 59, 0.27);
+        background-color: #f9e8e8;
+    }
+}
+.mian .redenve .btn .gradient {
+    width: 65%;
+    margin: 0 auto;
+    box-shadow: 0 0 0.21333rem 0.02667rem rgb(242 65 59 / 27%);
+    border-radius: 1.33333rem;
+}
+
+.mian .redenve .btn .gradient .btns {
+    background: #ffce1f;
+    border: 0.02667rem solid #ffce1f;
+    color: #fff;
+}
+
+.van-button--round {
+    border-radius: 26.64rem;
+}
+.van-button--block {
+    display: block;
+    width: 100%;
+}
+.van-button--normal {
+    padding: 0 0.4rem;
+    font-size: 0.37333rem;
+}
+.van-button--default {
+    color: #323233;
+    background-color: #fff;
+    border: 0.02667rem solid #ebedf0;
+}
+.van-button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 1.17333rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.42667rem;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 0.05333rem;
+    cursor: pointer;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    -webkit-appearance: none;
+}
+
+.btns:active {
+    background: #e6ba1c !important;
+}
+
+.van-image {
+    position: relative;
+    display: inline-block;
+}
+
+.van-button:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: inherit;
+    border-color: #000;
+    border-radius: inherit;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    content: ' ';
+}

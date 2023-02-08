@@ -1,0 +1,365 @@
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#box-confirm {
+    user-select: none;
+    .cdk-overlay-container {
+        position: fixed;
+        z-index: 10001;
+    }
+    .cdk-global-overlay-wrapper,
+    .cdk-overlay-container {
+        top: -8px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .cdk-overlay-backdrop {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        pointer-events: auto;
+        -webkit-tap-highlight-color: transparent;
+        transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        opacity: 0;
+    }
+
+    .cdk-global-overlay-wrapper,
+    .cdk-overlay-pane {
+        display: flex;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .cdk-global-overlay-wrapper,
+    .cdk-overlay-container {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .cdk-visually-hidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+        outline: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .customize_dialog_css .mat-dialog-container {
+        padding: 0 !important;
+        border-radius: 12px !important;
+    }
+
+    .mat-dialog-container {
+        display: block;
+        padding: 24px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        overflow: auto;
+        outline: 0;
+        width: 100%;
+        height: 100%;
+        min-height: inherit;
+        max-height: inherit;
+    }
+    .mat-dialog-container {
+        box-shadow: 0 11px 15px -7px #0003, 0 24px 38px 3px #00000024, 0 9px 46px 8px #0000001f;
+        background: #fff;
+        color: #000000de;
+    }
+
+    .logo {
+        position: absolute;
+        transform: translateY(-40px);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 12px;
+        right: 0.5rem;
+    }
+
+    .server-bet-amount {
+        margin-top: 38px;
+        color: #d6d9db80;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        span {
+            color: #fff;
+        }
+    }
+    .bet-type-label {
+        width: 80px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .price-value {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .bet-type {
+        width: 138px;
+        height: 40px;
+        opacity: 0.5;
+    }
+
+    .bet-type-title {
+        position: absolute;
+        top: -2px;
+        font-family: 'UTM Alberta Heavy', serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .live {
+        width: 6px;
+        height: 6px;
+        margin-right: 6px;
+        background: #eb0d1e;
+        border-radius: 100px;
+        animation: fadeIn 0.6s infinite alternate;
+    }
+
+    .viewer {
+        margin-left: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #fff;
+    }
+
+    .title {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+    }
+
+    .display {
+        margin: 8px 0 12px;
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            border-radius: 100px;
+        }
+        .operation {
+            width: 50px;
+            height: 50px;
+            min-width: 0;
+            border-radius: 100px;
+        }
+    }
+    .mat-flat-button:not([class*='mat-elevation-z']),
+    .mat-stroked-button:not([class*='mat-elevation-z']) {
+        box-shadow: 0 0 0 0 #0003, 0 0 0 0 #00000024, 0 0 0 0 #0000001f;
+    }
+    .mat-button,
+    .mat-icon-button,
+    .mat-stroked-button,
+    .mat-flat-button {
+        box-sizing: border-box;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: baseline;
+        text-align: center;
+        margin: 0;
+        min-width: 64px;
+        line-height: 36px;
+        padding: 0 16px;
+        border-radius: 4px;
+        overflow: visible;
+    }
+    .mat-fab,
+    .mat-flat-button,
+    .mat-mini-fab,
+    .mat-raised-button {
+        color: #000000de;
+        background-color: #fff;
+    }
+    .mat-focus-indicator,
+    .mat-mdc-focus-indicator {
+        position: relative;
+    }
+
+    .mat-button,
+    .mat-fab,
+    .mat-flat-button,
+    .mat-icon-button,
+    .mat-mini-fab,
+    .mat-raised-button,
+    .mat-stroked-button {
+        font-family: Roboto, Helvetica Neue, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .mat-button-focus-overlay {
+        opacity: 0;
+        transition: opacity 200ms cubic-bezier(0.35, 0, 0.25, 1), background-color 200ms cubic-bezier(0.35, 0, 0.25, 1);
+    }
+
+    .mat-button-ripple.mat-ripple,
+    .mat-button-focus-overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        border-radius: inherit;
+    }
+    .mat-ripple {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .amount-button {
+        height: 50px !important;
+        min-width: 0 !important;
+        margin-bottom: 10px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-radius: 100px !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 19px !important;
+    }
+
+    .current-amount {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: #fff;
+        transform: translateY(-6px);
+        p {
+            margin: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .mat-flat-button:not([class*='mat-elevation-z']),
+    .mat-stroked-button:not([class*='mat-elevation-z']) {
+        box-shadow: 0 0 0 0 #0003, 0 0 0 0 #00000024, 0 0 0 0 #0000001f;
+    }
+    .mat-button,
+    .mat-icon-button,
+    .mat-stroked-button,
+    .mat-flat-button {
+        box-sizing: border-box;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: baseline;
+        text-align: center;
+        margin: 0;
+        min-width: 64px;
+        line-height: 36px;
+        padding: 0 16px;
+        border-radius: 4px;
+        overflow: visible;
+    }
+
+    .limit {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        font-style: italic;
+        color: #fff;
+    }
+
+    .action {
+        margin-top: 12px;
+        height: 40px;
+        .reset {
+            flex-grow: 1;
+            color: #212121;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            background: #efeff1;
+            border-radius: 8px;
+        }
+        .confirm {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            margin-left: 6px;
+            flex-grow: 2;
+            border-radius: 8px;
+        }
+    }
+
+    .v-enter,
+    .v-leave-to {
+        opacity: 0;
+    }
+
+    .v-enter-active {
+        transition: opacity 0.5s;
+        animation: bounce-in 0.5s;
+    }
+    .v-leave-active {
+        transition: opacity 0.3s;
+        animation: bounce-in 0.5s reverse;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

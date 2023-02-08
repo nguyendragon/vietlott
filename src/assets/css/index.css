@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    position: relative;
+    font-size: 0.37333rem;
+    background-color: #0b1437;
+}
+
+.App {
+    color: #2c3e50;
+    max-width: 10rem;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 2.4rem !important;
+        margin: 0 auto;
+        background-color: #dadada;
+        width: 100%;
+    }
+    .App {
+        width: 10rem !important;
+    }
+}

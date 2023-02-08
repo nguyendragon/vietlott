@@ -1,0 +1,488 @@
+@import '@assets/fonts/fontUtm.css';
+
+.btn-parent {
+    background: radial-gradient(65% 65% at 50% 50%, rgb(1, 139, 87) 25.68%, rgb(10, 76, 51) 100%);
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.mat-flat-button:not([class*='mat-elevation-z']),
+.mat-stroked-button:not([class*='mat-elevation-z']) {
+    box-shadow: 0 0 0 0 #0003, 0 0 0 0 #00000024, 0 0 0 0 #0000001f;
+}
+
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+}
+
+.mat-button-ripple.mat-ripple,
+.mat-button-focus-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.mat-ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+.mat-button.cdk-keyboard-focused .mat-button-focus-overlay,
+.mat-button.cdk-program-focused .mat-button-focus-overlay,
+.mat-icon-button.cdk-keyboard-focused .mat-button-focus-overlay,
+.mat-icon-button.cdk-program-focused .mat-button-focus-overlay,
+.mat-stroked-button.cdk-keyboard-focused .mat-button-focus-overlay,
+.mat-stroked-button.cdk-program-focused .mat-button-focus-overlay,
+.mat-flat-button.cdk-keyboard-focused .mat-button-focus-overlay,
+.mat-flat-button.cdk-program-focused .mat-button-focus-overlay {
+    opacity: 0.12;
+}
+
+.mat-button-focus-overlay {
+    opacity: 0;
+    transition: opacity 200ms cubic-bezier(0.35, 0, 0.25, 1), background-color 200ms cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.mat-button-ripple.mat-ripple,
+.mat-button-focus-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.button-border {
+    border: 2px solid rgba(0, 153, 95, 0.5);
+    border-radius: 4px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+button .glow-container {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+button .glow-container .glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    filter: blur(30px);
+    background: rgb(205, 233, 140);
+}
+
+button .content {
+    position: relative;
+    z-index: 10;
+}
+
+.big-button {
+    transform: translateY(4px);
+}
+
+.big-button .title {
+    font-weight: 700;
+    font-size: 0.25rem;
+    line-height: 14px;
+    color: #ffffffb3;
+    font-family: 'Roboto' !important;
+}
+
+.yellow-button .title {
+    font-weight: 700;
+    line-height: 14px;
+    color: #ffffffb3;
+    font-family: 'UTM Alberta Heavy', serif;
+}
+
+.big-button .text-shadow,
+.yellow-button .text-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    color: #fff0;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 40%);
+}
+
+button .big-button .body {
+    font-family: 'UTM Alberta Heavy', serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.btn-parent-yellow {
+    background: radial-gradient(50% 50% at 50% 50%, rgb(248, 227, 163) 25.68%, rgb(236, 189, 111) 100%);
+}
+
+.big-button .value,
+.yellow-button .value {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ffffffb3;
+}
+
+.diamond {
+    z-index: 1000;
+    position: absolute;
+    right: -5px;
+    bottom: -2px;
+    span {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-weight: 700;
+        font-size: 0.3rem;
+        line-height: 14px;
+        color: #fff;
+    }
+}
+
+.mat-ripple-element {
+    background-color: #0000001a;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: opacity, transform 0ms cubic-bezier(0, 0, 0.2, 1);
+    transform: scale(0);
+}
+
+.mat-ripple-element2 {
+    left: -78.8528px;
+    top: -61.0432px;
+    height: 250px;
+    width: 250px;
+    transition-duration: 350ms;
+    transform: scale(1);
+}
+
+.button1 {
+    .right-diamond {
+        position: absolute;
+        z-index: 1000;
+        bottom: -1px;
+        right: -1px;
+        .betAmount {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+
+    .roulette-ball {
+        overflow: hidden;
+        border-radius: 100px;
+        z-index: 10;
+        width: 36px;
+        height: 36px;
+        background: radial-gradient(
+            71.68% 71.68% at 65.49% 28.32%,
+            rgb(228, 185, 121) 0%,
+            rgb(251, 176, 64) 45.31%,
+            rgb(228, 152, 37) 86.65%,
+            rgb(252, 169, 46) 100%
+        );
+        opacity: 1;
+
+        .single {
+            background: radial-gradient(
+                70.59% 70.59% at 67.65% 29.41%,
+                rgb(0, 153, 95) 0%,
+                rgb(9, 90, 53) 30.73%,
+                rgb(6, 75, 44) 72.92%,
+                rgb(12, 112, 70) 98.44%
+            );
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        span {
+            font-family: 'UTM Alberta Heavy', serif;
+            font-weight: 400;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text !important;
+        }
+
+        .star {
+            position: absolute;
+            top: 0px;
+            right: 1px;
+        }
+    }
+    .roulette-ball.action {
+        background: radial-gradient(
+            67.61% 67.6% at 77.6% 28.06%,
+            rgb(255, 255, 255) 0%,
+            rgb(254, 226, 200) 4.92%,
+            rgb(253, 201, 153) 10.62%,
+            rgb(251, 180, 117) 16.41%,
+            rgb(249, 163, 86) 22.15%,
+            rgb(248, 151, 61) 27.85%,
+            rgb(247, 142, 44) 33.48%,
+            rgb(246, 137, 34) 39.03%,
+            rgb(246, 135, 31) 44.38%,
+            rgb(245, 129, 32) 58.1%,
+            rgb(243, 113, 33) 79.95%,
+            rgb(241, 90, 34) 100%
+        );
+    }
+}
+
+.button2 {
+    .right-diamond {
+        position: absolute;
+        z-index: 1000;
+        bottom: -1px;
+        right: -1px;
+        .betAmount {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+
+    .roulette-ball {
+        overflow: hidden;
+        border-radius: 100px;
+        z-index: 10;
+        width: 28px;
+        height: 28px;
+        background: radial-gradient(
+            71.68% 71.68% at 65.49% 28.32%,
+            rgb(228, 185, 121) 0%,
+            rgb(251, 176, 64) 45.31%,
+            rgb(228, 152, 37) 86.65%,
+            rgb(252, 169, 46) 100%
+        );
+
+        opacity: 1;
+
+        .single {
+            background: radial-gradient(
+                70.59% 70.59% at 67.65% 29.41%,
+                rgb(0, 153, 95) 0%,
+                rgb(9, 90, 53) 30.73%,
+                rgb(6, 75, 44) 72.92%,
+                rgb(12, 112, 70) 98.44%
+            );
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        span {
+            font-family: 'UTM Alberta Heavy', serif;
+            font-weight: 400;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text !important;
+        }
+
+        .star {
+            position: absolute;
+            top: 0px;
+            right: 1px;
+        }
+
+        .double {
+            background: radial-gradient(
+                70.59% 70.59% at 67.65% 29.41%,
+                rgb(0, 153, 95) 0%,
+                rgb(9, 90, 53) 30.73%,
+                rgb(6, 75, 44) 72.92%,
+                rgb(12, 112, 70) 98.44%
+            );
+            transform: translateY(-5%);
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    .roulette-ball.action {
+        background: radial-gradient(
+            67.61% 67.6% at 77.6% 28.06%,
+            rgb(255, 255, 255) 0%,
+            rgb(254, 226, 200) 4.92%,
+            rgb(253, 201, 153) 10.62%,
+            rgb(251, 180, 117) 16.41%,
+            rgb(249, 163, 86) 22.15%,
+            rgb(248, 151, 61) 27.85%,
+            rgb(247, 142, 44) 33.48%,
+            rgb(246, 137, 34) 39.03%,
+            rgb(246, 135, 31) 44.38%,
+            rgb(245, 129, 32) 58.1%,
+            rgb(243, 113, 33) 79.95%,
+            rgb(241, 90, 34) 100%
+        );
+    }
+}
+
+.button3 {
+    .right-diamond {
+        position: absolute;
+        z-index: 1000;
+        bottom: -1px;
+        right: -1px;
+        .betAmount {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+
+    .roulette-ball {
+        overflow: hidden;
+        border-radius: 100px;
+        z-index: 10;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(
+            71.68% 71.68% at 65.49% 28.32%,
+            rgb(228, 185, 121) 0%,
+            rgb(251, 176, 64) 45.31%,
+            rgb(228, 152, 37) 86.65%,
+            rgb(252, 169, 46) 100%
+        );
+        margin-right: 2px;
+
+        opacity: 1;
+
+        .single {
+            background: radial-gradient(
+                70.59% 70.59% at 67.65% 29.41%,
+                rgb(0, 153, 95) 0%,
+                rgb(9, 90, 53) 30.73%,
+                rgb(6, 75, 44) 72.92%,
+                rgb(12, 112, 70) 98.44%
+            );
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        span {
+            font-family: 'UTM Alberta Heavy', serif;
+            font-weight: 400;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text !important;
+        }
+
+        .star {
+            position: absolute;
+            top: 0px;
+            right: 1px;
+        }
+
+        .triple {
+            color: #fff;
+            transform: translateY(-10%);
+            font-size: 16px;
+            line-height: 21px;
+            background: radial-gradient(
+                70.59% 70.59% at 67.65% 29.41%,
+                rgb(0, 153, 95) 0%,
+                rgb(9, 90, 53) 30.73%,
+                rgb(6, 75, 44) 72.92%,
+                rgb(12, 112, 70) 98.44%
+            );
+        }
+
+        .double {
+            background: radial-gradient(
+                70.59% 70.59% at 67.65% 29.41%,
+                rgb(0, 153, 95) 0%,
+                rgb(9, 90, 53) 30.73%,
+                rgb(6, 75, 44) 72.92%,
+                rgb(12, 112, 70) 98.44%
+            );
+            transform: translateY(-5%);
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    .roulette-ball.action {
+        background: radial-gradient(
+            67.61% 67.6% at 77.6% 28.06%,
+            rgb(255, 255, 255) 0%,
+            rgb(254, 226, 200) 4.92%,
+            rgb(253, 201, 153) 10.62%,
+            rgb(251, 180, 117) 16.41%,
+            rgb(249, 163, 86) 22.15%,
+            rgb(248, 151, 61) 27.85%,
+            rgb(247, 142, 44) 33.48%,
+            rgb(246, 137, 34) 39.03%,
+            rgb(246, 135, 31) 44.38%,
+            rgb(245, 129, 32) 58.1%,
+            rgb(243, 113, 33) 79.95%,
+            rgb(241, 90, 34) 100%
+        );
+    }
+}

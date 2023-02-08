@@ -1,0 +1,17 @@
+.list-recharge-record {
+    .item {
+        user-select: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+
+    .danger {
+        color: rgb(242, 65, 59);
+    }
+
+    .success {
+        color: #2ecc71;
+    }
+}

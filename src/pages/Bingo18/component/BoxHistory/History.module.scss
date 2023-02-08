@@ -1,0 +1,160 @@
+.btn-history {
+    user-select: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    color: #fff;
+    background-color: #0a4429;
+    border: 0.05667rem solid #0f6947;
+    padding: 0.2rem;
+}
+
+.btn-history.active {
+    background-color: #0f6947;
+}
+
+.wrap {
+    padding: 0.2rem 0.13333rem;
+    background-color: #0f6947;
+    border-top-right-radius: 0.26667rem;
+    border-top-left-radius: 0.26667rem;
+    font-weight: 600;
+    font-size: 0.32rem;
+    color: #fbedf3;
+}
+
+.goItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    background-color: #fbedf3;
+    padding: 0.2rem 0;
+    color: #0f6947;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.35rem;
+    font-weight: 550;
+}
+
+.page-nav {
+    height: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 0.26667rem;
+    border-bottom-left-radius: 0.26667rem;
+    background-color: #0f6947;
+    .arr {
+        height: 1rem;
+        width: 1rem;
+        background-color: #d8d8d8;
+        border-radius: 0.13333rem;
+        cursor: pointer;
+    }
+
+    .number {
+        width: 2.66667rem;
+        height: 1rem;
+        line-height: 1rem;
+    }
+}
+
+.page-nav .arr.action {
+    background-color: #f2413b;
+}
+
+.list-bet {
+    background: rgba(15, 105, 71, 0.3);
+    border-radius: 0.26667rem;
+    .list {
+        margin-top: 0.2rem;
+    }
+    .van-empty__description {
+        margin-top: 0.42667rem;
+        padding: 0 1.6rem;
+        color: #fff;
+        font-size: 0.27333rem;
+        line-height: 0.43333rem;
+    }
+    .hb {
+        background-color: #fff;
+        color: #414141;
+        font-size: 0.37333rem;
+        .item {
+            border-bottom: 0.02667rem solid #e2e2e2;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .info {
+            width: 100%;
+        }
+
+        .issueName .state.red {
+            color: #fb4e4e;
+        }
+        .issueName .state {
+            background-color: #f3f1f1;
+            padding: 0.10667rem 0.26667rem;
+            margin-left: 0.26667rem;
+            border-radius: 0.53333rem;
+            font-size: 0.32rem;
+        }
+        .red {
+            color: #d0322d;
+        }
+
+        .state.green {
+            color: #5cba47;
+        }
+
+        .time {
+            font-size: 0.32rem;
+            color: #5f5f5f;
+        }
+
+        .money {
+            font-weight: 600;
+            font-size: 0.42667rem;
+        }
+
+        .fail {
+            color: #fb4e4e;
+        }
+
+        .success {
+            color: #5cba47;
+        }
+    }
+
+    .hb {
+        .details {
+            padding: 0.4rem;
+            border-bottom: 0.02667rem solid #e2e2e2;
+            .tit {
+                font-size: 0.53333rem;
+                color: #000;
+                margin-bottom: 0.26667rem;
+            }
+            .detailLi {
+                min-height: 0.66667rem;
+                line-height: 0.66667rem;
+                padding: 0 0.26667rem;
+                background-color: #f9f9f9;
+                color: #969696;
+                font-size: 0.37333rem;
+                border-radius: 0.13333rem;
+                margin-bottom: 0.21333rem;
+            }
+            .red {
+                color: #d0322d;
+            }
+
+            .green {
+                color: #5cba47;
+            }
+        }
+    }
+}

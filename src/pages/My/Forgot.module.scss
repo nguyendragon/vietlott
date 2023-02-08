@@ -1,0 +1,205 @@
+.login-banner {
+    position: relative;
+    background: url('@assets/images/login_banner.png') no-repeat top;
+    background-size: cover;
+    min-height: 6.4rem;
+    max-height: 6.66667rem;
+    .bankPage {
+        height: 1.33333rem;
+        width: 1.33333rem;
+    }
+    .navbar-back {
+        width: 0.69333rem;
+        height: 0.69333rem;
+    }
+    .headlogo {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.53333rem;
+        right: 0.4rem;
+        width: 3.2rem;
+        height: 1.06667rem;
+    }
+}
+
+.login-box {
+    position: relative;
+    z-index: 9;
+    padding: 0.66667rem 0.8rem;
+    border-radius: 0.53333rem 0.53333rem 0 0;
+    margin-top: -0.53333rem;
+    background-color: #fff;
+    .tit {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #cd0103;
+    }
+}
+
+.mian-from {
+    margin-top: 0.4rem;
+    .lab {
+        font-size: 0.37333rem;
+        color: #959595;
+    }
+    .item.first {
+        padding-left: 1.6rem;
+    }
+    .item {
+        position: relative;
+        height: 1.06667rem;
+        line-height: 0.96rem;
+        margin: 0.4rem 0 0.8rem;
+        border: 0.05333rem solid rgba(242, 65, 59, 0.27);
+        border-radius: 0.21333rem;
+        overflow: hidden;
+        padding-left: 0.88rem;
+        .number {
+            position: absolute;
+            left: 0.26667rem;
+            font-style: normal;
+            font-size: 0.4rem;
+            line-height: 0.96rem;
+            padding-right: 0.08rem;
+            color: #f2413b;
+        }
+    }
+
+    .mobile {
+        height: 0.53333rem;
+        width: 0.37333rem;
+        background: url('@assets/images/mobile-icon.png') no-repeat 50%;
+        background-size: cover;
+    }
+
+    input {
+        caret-color: #f2413b;
+        border: none;
+        width: 100%;
+        height: 0.96rem;
+        font-size: 0.4rem;
+    }
+    .password {
+        height: 0.48rem;
+        width: 0.42667rem;
+        background: url('@assets/images/lock-password.png') no-repeat 50%;
+        background-size: cover;
+    }
+
+    .invite {
+        height: 0.4rem;
+        width: 0.48rem;
+        background: url('@assets/images/invite-icon.png') no-repeat 50%;
+        background-size: cover;
+    }
+    .code_otp {
+        height: 0.539rem;
+        width: 0.37333rem;
+        background: url('@assets/images/veri-otp.png') no-repeat 50%;
+        background-size: cover;
+    }
+
+    .gradient {
+        width: 80%;
+        margin: 0 auto;
+        padding: 9px 0;
+        border: 0.02667rem solid #5cba47;
+        color: #fff;
+        background-color: #5cba47;
+        box-shadow: 0 0 0.21333rem 0.02667rem rgb(92 186 71 / 72%);
+        border-radius: 1.06667rem;
+    }
+    .txt {
+        font-size: 0.4rem;
+        color: #f2413b;
+    }
+
+    .item .otp {
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 0.37333rem;
+        height: 0.96rem;
+        border-radius: 0.13333rem;
+        width: 1.86667rem;
+        text-align: center;
+        line-height: 0.96rem;
+        background-color: #f9e8e8;
+        border-color: #f9e8e8 !important;
+        color: #000;
+    }
+
+    .tip {
+        margin: -0.53333rem 0 0.26667rem;
+        font-size: 0.34667rem;
+        color: #333;
+    }
+}
+
+.navbar {
+    width: 100%;
+    max-width: 10rem;
+    top: 0;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    background-image: linear-gradient(90deg, #cd0103, #f64841);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: #fff;
+    z-index: 999;
+
+    .navbar-left,
+    .navbar-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        line-height: 1.33333rem;
+        padding: 0 0.26667rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-title {
+        font-size: 0.42667rem;
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar-back {
+        width: 0.69333rem;
+        height: 0.69333rem;
+    }
+}
+
+.van-checkbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.van-checkbox__icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    flex: none;
+    height: 1em;
+    font-size: 0.53333rem;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.van-checkbox__label {
+    margin-left: 0.21333rem;
+    color: #323233;
+    line-height: 0.53333rem;
+}

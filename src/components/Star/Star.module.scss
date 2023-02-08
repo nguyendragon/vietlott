@@ -1,0 +1,83 @@
+.roulette-ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100px;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(
+        71.68% 71.68% at 65.49% 28.32%,
+        rgb(228, 185, 121) 0%,
+        rgb(251, 176, 64) 45.31%,
+        rgb(228, 152, 37) 86.65%,
+        rgb(252, 169, 46) 100%
+    );
+    opacity: 1;
+    .single {
+        background: radial-gradient(
+            70.59% 70.59% at 67.65% 29.41%,
+            rgb(0, 153, 95) 0%,
+            rgb(9, 90, 53) 30.73%,
+            rgb(6, 75, 44) 72.92%,
+            rgb(12, 112, 70) 98.44%
+        );
+        line-height: 32px;
+    }
+    span {
+        font-family: 'UTM Alberta Heavy', serif;
+        font-weight: 400;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text !important;
+    }
+
+    img {
+        position: absolute;
+        top: -1px;
+        right: 0px;
+    }
+}
+
+.roulette-ball_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 8px;
+    border-radius: 100px;
+    z-index: 10;
+    width: 28px;
+    height: 28px;
+    background: radial-gradient(
+        71.68% 71.68% at 65.49% 28.32%,
+        rgb(228, 185, 121) 0%,
+        rgb(251, 176, 64) 45.31%,
+        rgb(228, 152, 37) 86.65%,
+        rgb(252, 169, 46) 100%
+    );
+    opacity: 1;
+    .single {
+        background: radial-gradient(
+            70.59% 70.59% at 67.65% 29.41%,
+            rgb(0, 153, 95) 0%,
+            rgb(9, 90, 53) 30.73%,
+            rgb(6, 75, 44) 72.92%,
+            rgb(12, 112, 70) 98.44%
+        );
+        // line-height: 32px;
+    }
+    span {
+        font-family: 'UTM Alberta Heavy', serif;
+        font-weight: 400;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text !important;
+        font-size: 20px !important;
+    }
+
+    img {
+        position: absolute;
+        top: -1px;
+        right: 0px;
+    }
+}

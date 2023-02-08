@@ -1,0 +1,38 @@
+.bank {
+    padding: 0.4rem;
+}
+
+.bank .box {
+    background: #fff;
+    box-shadow: 0 0.08rem 0.69333rem 0.10667rem #f1f2f5;
+    border-radius: 0.26667rem;
+    padding: 0.4rem;
+}
+
+.bank .box .item {
+    margin-bottom: 0.26667rem;
+}
+
+.bank .box .item .lab {
+    font-size: 0.4rem;
+    margin-bottom: 0.26667rem;
+}
+
+.bank .box .item .input .ipt {
+    width: 100%;
+    caret-color: red;
+    padding: 0 0.4rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 0.13333rem;
+    border: 0.05333rem solid rgba(242, 65, 59, 0.27);
+}
+
+.bank .bank-btn .btn {
+    height: 1.01333rem;
+    border: 0.02667rem solid #5cba47;
+    color: #fff;
+    width: 60%;
+    background-color: #5cba47;
+    box-shadow: 0 0 0.21333rem 0.02667rem rgb(92 186 71 / 72%);
+}

@@ -1,0 +1,312 @@
+.show-enter-active,
+.show-leave-active {
+    transition: all 0.5s;
+}
+.show-enter,
+.show-leave-to {
+    margin-top: 0.13333rem;
+}
+.show-enter-to,
+.show-leave {
+    margin-top: 0;
+}
+.mian {
+    background-color: #fbfcfd;
+}
+.mian .bank {
+    border-radius: 0.69333rem;
+}
+.mian .bank .navbar-back,
+.mian .bank {
+    width: 0.69333rem;
+    height: 0.69333rem;
+}
+.mian .head-right {
+    border-radius: 0.26667rem;
+    background: rgba(120, 11, 14, 0.24);
+}
+.mian .selectBox {
+    width: 100%;
+}
+.mian .selectBox .colorBox {
+    height: 1.06667rem;
+    width: 100%;
+    background-image: linear-gradient(90deg, #cd0103, #f64841);
+}
+.mian .selectBox .txtBox {
+    background-color: #fff;
+    z-index: 99;
+    height: 1.33333rem;
+    margin-top: -0.8rem;
+    border-radius: 0.26667rem 0.26667rem 0 0;
+    padding: 0.4rem 0.53333rem 0;
+    position: relative;
+}
+.mian .selectBox .txtBox.action {
+    height: 1.6rem;
+}
+.mian .selectBox .txtBox .txt {
+    color: #090909;
+    font-weight: 600;
+    font-size: 0.4rem;
+    line-height: 0.53333rem;
+}
+.mian .selectBox .txtBox .money {
+    color: #090909;
+    font-weight: 600;
+    margin-left: 0.13333rem;
+    font-size: 0.64rem;
+    text-align: center;
+}
+.mian .selectBox .txtBox .Umoney {
+    font-size: 0.48rem;
+    font-weight: 500;
+}
+.mian .selectBox .txtBox .Umoney .txt {
+    font-size: 0.37333rem;
+    font-weight: 400;
+}
+.mian .selectBox .txtBox .Umoney .red {
+    font-size: 0.48rem;
+    color: #f2413b;
+}
+.mian .selectBox .txtBox .img.action {
+    -webkit-animation: rotation-data-v-15115a63 0.5s linear;
+}
+@-webkit-keyframes rotation-data-v-15115a63 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+    }
+}
+.mian .selectBox .txtBox .icon {
+    position: absolute;
+    right: 0.53333rem;
+    top: 0;
+    height: 1.46667rem;
+    width: 0.88rem;
+    background: url('@assets/images/mark_recharge.png') no-repeat 50%;
+    background-size: 100% 100%;
+}
+.mian .selectBox .tab {
+    padding: 0.13333rem 0.4rem 0;
+    border-top: 0.02667rem solid #f6f6f6;
+}
+.mian .selectBox .tab .box {
+    width: 100%;
+}
+.mian .selectBox .tab .box ul {
+    width: calc(100% + 0.26667rem);
+}
+.mian .selectBox .tab .box ul li.item {
+    padding: 0.21333rem;
+    width: calc(33.3% - 0.26667rem);
+    border-radius: 0.13333rem;
+    white-space: nowrap;
+    background-image: linear-gradient(40deg, #e5e7f6 35%, #f5f3fb);
+    margin-bottom: 0.26667rem;
+    margin-right: 0.26667rem;
+    position: relative;
+}
+.mian .selectBox .tab .box ul li.item .icon {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+}
+.mian .selectBox .tab .box ul li.item .icon .size {
+    font-size: 0.53333rem;
+    color: #333;
+}
+.mian .selectBox .tab .box ul li.item .name {
+    text-align: center;
+}
+.mian .selectBox .tab .box ul li.item .icons {
+    text-align: right;
+    width: 0.53333rem;
+    line-height: 0.8rem;
+    height: 0.53333rem;
+    background: url('@assets/images/temp1.png') no-repeat 50%;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mian .selectBox .tab .box ul li.item.action {
+    background-image: linear-gradient(90deg, #cd0103, #f64841);
+    color: #fff;
+}
+.mian .selectBox .tab .box ul li.item.action .size {
+    color: #fff;
+}
+.mian .selectBox .withd {
+    padding: 0 0.53333rem;
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    font-size: 0.34667rem;
+}
+.mian .selectBox .number-box {
+    padding: 0 0.53333rem;
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    border-bottom: 0.02667rem solid #f6f6f6;
+    font-size: 0.66667rem;
+    font-weight: 600;
+}
+.mian .selectBox .number-box .symbol.action {
+    font-size: 0.48rem;
+}
+.mian .selectBox .number-box .input {
+    font-size: 0.48rem;
+    background: 0 0 !important;
+}
+.mian .selectBox .ipnBox {
+    padding: 0 0.53333rem;
+}
+.mian .selectBox .ipnBox .red {
+    font-size: 0.42667rem;
+    color: #f2413b;
+}
+.mian .selectBox .bankBox {
+    padding: 0 0.53333rem;
+}
+.mian .selectBox .bankBox .box {
+    background: #fff;
+    border: 0.05333rem solid #f2413b;
+    box-shadow: 0 0.21333rem 0.37333rem 0 rgba(242, 65, 59, 0.27);
+    border-radius: 0.13333rem;
+}
+.mian .selectBox .bankBox .box .item {
+    padding: 0.26667rem;
+    border-bottom: 0.02667rem solid #d8d8d8;
+    font-size: 0.37333rem;
+    color: #414141;
+}
+.mian .selectBox .bankBox .box .item:last-child {
+    border-bottom: none;
+}
+.mian .selectBox .conBox {
+    padding: 0 0.53333rem;
+}
+.mian .selectBox .conBox .des {
+    color: #b3b2c8;
+    font-size: 0.42667rem;
+    margin-bottom: 0.4rem;
+}
+.mian .selectBox .conBox .box {
+    background: #fff;
+    border: 0.05333rem solid #f2413b;
+    box-shadow: 0 0.21333rem 0.37333rem 0 rgba(242, 65, 59, 0.27);
+    border-radius: 0.13333rem;
+}
+.mian .selectBox .conBox .box .tit {
+    height: 0.93333rem;
+    padding: 0 0.26667rem;
+    color: #f2413b;
+}
+.mian .selectBox .conBox .box .tit.action {
+    border-bottom: 0.02667rem solid #ebebeb;
+}
+.mian .selectBox .conBox .box .list .item {
+    padding: 0 0.21333rem;
+    line-height: 0.53333rem;
+    color: #414141;
+    border-bottom: 0.02667rem solid #ebebeb;
+}
+.mian .selectBox .conBox .box .list .item .name.action {
+    height: 0.93333rem;
+    line-height: 0.93333rem;
+}
+.mian .selectBox .conBox .box .list .icon {
+    height: 0.53333rem;
+    width: 0.53333rem;
+    border-radius: 0.53333rem;
+    border: 0.05333rem solid #eee;
+}
+.mian .selectBox .conBox .box .list .icon.action {
+    border-color: rgba(242, 65, 59, 0.27);
+    background-color: rgba(242, 65, 59, 0.27);
+}
+.mian .selectBox .conBox .box .add {
+    -webkit-line-clamp: 1;
+    height: 0.93333rem;
+    padding: 0 0.26667rem;
+    background: #f9e8e8;
+    border-radius: 0.26667rem;
+    color: #f2413b;
+    font-weight: 600;
+}
+.mian .selectBox .conBox .box .add .plus {
+    margin-right: 0.26667rem;
+    height: 0.66667rem;
+    width: 0.66667rem;
+    border-radius: 0.66667rem;
+    background-color: rgba(242, 65, 59, 0.27);
+}
+.mian .selectBox .requiredBox {
+    padding: 0 0.53333rem;
+}
+.mian .selectBox .requiredBox .box {
+    height: 1.06667rem;
+    border: 0.02667rem solid #f2413b;
+    border-radius: 0.13333rem;
+    overflow: hidden;
+}
+.mian .selectBox .requiredBox .box .input {
+    height: 100%;
+    border: none;
+    width: 100%;
+    padding-left: 0.26667rem;
+}
+.mian .withdrawal-btn .btn {
+    height: 1.06667rem;
+    width: 75%;
+    background: #f2413b;
+    color: #fff;
+    box-shadow: 0 0 0.26667rem 0.02667rem rgba(242, 65, 59, 0.27);
+}
+
+.mian .withdrawal-btn .btn:last-child {
+    height: 1.06667rem;
+    width: 75%;
+    background: #bdc3c7;
+    color: #fff;
+    box-shadow: 0 0 0.26667rem 0.02667rem rgba(242, 65, 59, 0.27);
+}
+
+.mian .popup-box .title {
+    height: 1.6rem;
+    width: 100%;
+    background: url(../img/myProfilebg.298e3612.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.mian .popup-box .con {
+    padding: 0.26667rem 0;
+    border-bottom: 0.02667rem solid #dadada;
+}
+.mian .popup-box .con .input {
+    width: 100%;
+    height: 0.93333rem;
+    line-height: 0.93333rem;
+    border: none;
+    padding: 0 0.4rem;
+}
+.mian .popup-box .con .lab {
+    padding: 0 0.26667rem;
+    margin-bottom: 0.26667rem;
+}
+.mian .popup-box .food {
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+}
+.mian .popup-box .food .item {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.45333rem;
+}
+.mian .popup-box .food .item.sure {
+    color: #6abe57;
+}

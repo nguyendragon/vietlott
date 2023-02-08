@@ -1,0 +1,19 @@
+{
+<<<<<<< HEAD
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
+=======
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "@": "./src"
+                }
+            }
+        ]
+    ]
+}
+>>>>>>> 9f489ea (update client)

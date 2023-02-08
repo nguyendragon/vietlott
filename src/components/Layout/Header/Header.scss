@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    max-width: 10rem;
+    top: 0;
+    font-size: 0.42667rem;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    background: linear-gradient(90deg, #cd0103, #f64841);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: #fff;
+    z-index: 999;
+    .navbar-left,
+    .navbar-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        line-height: 1.33333rem;
+        padding: 0 0.26667rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-title {
+        font-size: 0.42667rem;
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar-left {
+        left: 0;
+    }
+
+    .navbar-right {
+        right: 0;
+    }
+}
+
+.header-fill {
+    width: 100%;
+    max-width: 10rem;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+}
+
+.navbar-back {
+    width: 0.69333rem;
+    height: 0.69333rem;
+}

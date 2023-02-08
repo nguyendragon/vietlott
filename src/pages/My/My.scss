@@ -1,0 +1,246 @@
+.mian.page {
+    padding-bottom: 2.93333rem;
+}
+
+.mian {
+    padding-top: 1.30667rem;
+    height: 100%;
+    max-width: 10.66667rem;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fbfcfd;
+    min-height: 100vh;
+    .menu-box {
+        z-index: 99999;
+        width: 100%;
+        background: #fff;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        .user-img {
+            width: 1.6rem;
+            height: 1.6rem;
+            text-align: center;
+            font-size: 0.32rem;
+            color: #fff;
+            border-radius: 1.6rem;
+            overflow: hidden;
+        }
+
+        .user-img .img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+
+        .infoName {
+            color: #fff;
+            font-size: 0.42667rem;
+        }
+    }
+    .menu-box .info {
+        background: url('@assets/images/bg_top.png') no-repeat 50%;
+        background-size: 100% 100%;
+        height: 4.8rem;
+    }
+}
+
+.infoName .name {
+    font-size: 0.50667rem;
+    height: 0.48rem;
+}
+
+.mian .menu-box .info .mb3 {
+    margin-bottom: 0.08rem;
+}
+
+.mian .menu-box .infoName .id {
+    font-size: 0.42667rem;
+}
+
+.mian .menu-box .info .mb3 {
+    margin-bottom: 0.08rem;
+}
+
+.mian .menu-box .infoName .number {
+    height: 0.53333rem;
+    line-height: 0.53333rem;
+}
+
+.mian .menu-box .total-box {
+    margin: -1.73333rem 0.4rem 0.4rem;
+    background-color: #fff;
+    padding: 0.4rem 0.53333rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.21333rem 0.8rem 0 rgb(211 13 13 / 7%);
+}
+
+.mian .menu-box .total-box .infoItem {
+    position: relative;
+}
+
+.total-box .infoItem .walletImg {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.p-l-15 {
+    padding-left: 0.4rem !important;
+}
+
+.p-t-5 {
+    padding-top: 0.13333rem !important;
+}
+
+.mian .menu-box .total-box .infoItem .des {
+    font-size: 0.32rem;
+    color: #cdcfd6;
+}
+
+.mian .menu-box .total-box .infoItem .txt {
+    font-size: 0.50667rem;
+    font-weight: 600;
+}
+
+.mian .menu-box .total-box .infoItem .img {
+    height: 0.53333rem;
+    width: 0.53333rem;
+}
+
+.m-l-10 {
+    margin-left: 0.26667rem !important;
+}
+
+.mian .menu-box .total-box .infoItem .infoBtn .item {
+    width: 45%;
+}
+
+.mian .menu-box .total-box .infoItem .infoBtn .item .li {
+    color: #fff;
+    font-size: 0.37333rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    width: 100%;
+    background-color: #ffce1f;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    box-shadow: 0 0 0.26667rem 0.02667rem rgb(242 65 59 / 27%);
+}
+
+.mian .menu-box .total-box .infoItem .infoBtn .item:last-child .li {
+    background-color: #f2413b;
+    box-shadow: 0 0 0.26667rem 0.02667rem rgb(242 65 59 / 27%);
+}
+
+.mian .menu-box .promote {
+    margin: 0 0.4rem 0.4rem;
+    height: 1.38667rem;
+    background: url('@assets/images/banner_tuiguang.png') no-repeat 0 0;
+    background-size: 100% auto;
+    font-size: 0.53333rem;
+    color: #fff;
+    position: relative;
+}
+
+.mian .menu-box .promote .img {
+    position: absolute;
+    top: 50%;
+    right: 0.4rem;
+    transform: translateY(-50%);
+}
+
+.list-my {
+    margin-top: 0.26667rem;
+    background: #fff;
+    box-shadow: 0 0 0.8rem 0 rgb(58 58 58 / 7%);
+    .item {
+        padding: 0 0.66667rem;
+        height: 1.33333rem;
+        line-height: 1.33333rem;
+        font-size: 0.4rem;
+        color: #000;
+        border-bottom: 0.02667rem solid #efeeee;
+        .img {
+            display: block;
+            width: 0.71rem;
+            height: 0.7rem;
+        }
+        .name {
+            font-size: 0.37333rem;
+            padding-left: 0.26667rem;
+        }
+    }
+    .item {
+        .img.img1 {
+            background: url('https://92lottery.club/img/invite.90e0a700.png') no-repeat 50%;
+            background-size: cover;
+        }
+        .img.img2 {
+            background: url('@assets/images/security.png') no-repeat 50%;
+            background-size: cover;
+        }
+        .img.img3 {
+            background: url('@assets/images/lixi.png') no-repeat 50%;
+            background-size: cover;
+        }
+        .img.img4 {
+            background: url('@assets/images/question.png') no-repeat 50%;
+            background-size: cover;
+        }
+        .img.img5 {
+            background: url('@assets/images/about.png') no-repeat 50%;
+            background-size: cover;
+        }
+        .img.img6 {
+            background: url('@assets/images/support.png') no-repeat 50%;
+            background-size: cover;
+        }
+    }
+}
+
+.mian .logout-btn .gradient {
+    width: 65%;
+    margin: 0 auto;
+    box-shadow: 0 0 0.26667rem 0.02667rem rgb(242 65 59 / 27%);
+    border-radius: 1.33333rem;
+}
+
+.mian .logout-btn .gradient .btn {
+    background-color: #f2413b;
+    color: #fff;
+}
+
+.van-button:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: inherit;
+    border-color: #000;
+    border-radius: inherit;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    content: ' ';
+}
+
+.van-button__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.mian .logout-btn .gradient .btn span {
+    font-size: 0.42667rem;
+}
+
+.mian .logout-btn .gradient .btn span {
+    font-size: 0.42667rem;
+}
